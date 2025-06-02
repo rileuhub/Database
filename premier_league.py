@@ -26,4 +26,11 @@ menu_choice =''
 while menu_choice != 'Z':
     menu_choice = input('Welcome to the Manchester City Premier League 24/25 season database\n\n'
                         'Type the letter for the information you want:\n'
-                     
+                        'A: All information about each player\n'
+                        'B: Goals and shots from strikers\n'
+                        'C: Saves from goal keepers\n'
+                        'Z: Exit\n\nType option here')
+    menu_choice = menu_choice.upper()
+    if menu_choice == 'A':
+        print_query('all')
+
