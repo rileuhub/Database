@@ -22,4 +22,8 @@ def print_query(view_name:str):
     print(tabulate(results,headings))
     db.close()
 
-print_query('all')
+menu_choice =''
+while menu_choice != 'Z':
+    menu_choice = input('Welcome to the Manchester City Premier League 24/25 season database\n\n'
+                        'Type the letter for the information you want:\n'
+                     
